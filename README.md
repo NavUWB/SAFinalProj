@@ -13,27 +13,27 @@ Show data of different sources being pulled into our database. Securely serve th
 
 # Needs
 / Sensor Hub
-Create a simple .NET Core MVC Web App and add simple polymorphic class that will 
-parse and filter two file types and add the data to our database
-link to sample data .csv files https://www.wellnessbear.com/Blog/Post/433/Fitbit-Sample-Datasets 
+
+Create a simple .NET Core MVC Web App and add api service/controller class that will accept data from sensors
+parse and filter the data and add it to our database.
+
+Link to sample data .csv files https://www.wellnessbear.com/Blog/Post/433/Fitbit-Sample-Datasets 
 
 Should we try to find another file (XML?) of sample sensor data from a different device?  Or is one sample data source 
-good with a mocked API?
+good with a mocked REST API?
 
 Not sure how we "show" the sensor hub "working". Have it print to command line, to a view (the latter seems odd)?
 
-/ There is a controller scaffolded under the Services folder such that it would be called by the sensors using GET/POST/etc.,
-and then write to the DB we set-up.  One of us needs to write a mock that will load a file (the one above) instead, as well as 
-implement some methods for uploading actual API calls into the DB.
+/ There is a controller scaffolded under the Services folder called SensorHubController such that it would be called by the sensors using GET/POST/etc., and then write to a DB asynchronously.  One of us needs to code a stub that will load a file 
+(the one above) instead, as well as implement some methods for mocking the actual API calls into the DB.
 
 / Database. For this implementation we should just show a RDBMS as we're so pressed for time. 
 Ultimately, it would probably be beneficial to use a stream processor and non relational storage. 
 This is much simplified by the .NET stack, we just need to decide what we want to do; local sql database, link it to Azure, etc.
-For now it will go into our each persons local DBContexts that VS supplies by default (under Data).  
+For now it will go into our each persons local DBContexts that VS supplies by default (under Data). 
 
 / Views. This is made much simpler by the .NET Core stack, but will need UI design and functionality for pulling 
-and putting data into the database from the views. Under the Views folder, all of the Home folder views need to be changed
-or deleted.
+and putting data into the database from the views. Simplest would be a "sync" button that will call the SensorHubController stubbed data into the DBContext and display it.
 
 / File Folders to Add/Delete/Update classes
 
