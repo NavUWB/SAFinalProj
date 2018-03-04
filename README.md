@@ -31,9 +31,9 @@ For now it will go into our each persons local DBContexts that VS supplies by de
 and putting data into the database from the views. Under the Views folder, all of the Home folder views need to be changed
 or deleted.
 
-/ Files to Change
+/ File Folders to Add/Delete/Update classes
 
-Models - None, only need to add classes
+Models - Only need to add classes
 
 Views - All views under the Home folder need to be changed or deleted, nothing else should be altered.  Adding is OK.
 
