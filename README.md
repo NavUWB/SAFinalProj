@@ -1,6 +1,10 @@
 # SAFinalProj
 
-This project is begun as a simple .NET Core MVC Web Application, with authorization locallty for single users selected - 
+# Requirements
+
+Visual Studio 2017 with ASP.net 2.0.1; the very newest update.  Available via your Microsoft Dreamspark account.
+
+This project is begun as a simple .NET Core MVC Web Application, with authorization locally for single users selected - 
 same as can be started from VS 2017 on your desktop.  We will be modifying it to suit our use as an 
 MVC web application with a basic sensor hub for pulling in data from sensors for eventual serving to end users.
 
@@ -46,3 +50,5 @@ Services - I added SensorHubController and had it auto-scaffold.  It needs to be
 changes needed.  Additional classes OK.
 
 No other changes should be needed until we get to dealing with Database stuff (appsettings.json will need to be updated, etc)
+
+There is a lot of stuff, most all of it is for the log-in and email framework and support classes.
