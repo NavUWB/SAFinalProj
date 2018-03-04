@@ -9,7 +9,9 @@ same as can be started from VS 2017 on your desktop.  We will be modifying it to
 MVC web application with a basic sensor hub for pulling in data from sensors for eventual serving to end users.
 
 # Goals
-Show data of different sources being pulled into our database. Securely serve the data to end users.
+Show data from different sensors/sources being pulled into our data warehouse (database for our simplified implementations). 
+
+Securely serve the data to end users.
 
 # Needs
 / Sensor Hub
