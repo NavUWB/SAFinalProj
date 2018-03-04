@@ -33,10 +33,14 @@ or deleted.
 
 Files to Change
 Models - None, only need to add classes
-\nViews - All views under the Home folder need to be changed or deleted, nothing else should be altered.  Adding is OK.
-\nControllers - Depending on view changes, Home controller may need to be changed (it's only doing stuff for the top margin tabs).  
+
+Views - All views under the Home folder need to be changed or deleted, nothing else should be altered.  Adding is OK.
+Controllers - Depending on view changes, Home controller may need to be changed (it's only doing stuff for the top margin tabs).  
 Otherwise, only additional classes.
-\nData - Downstream further we'll need to add DB connections, but this would be one of us (and may not be necessary)
-\nServices - I added SensorHubController and had it auto-scaffold.  It needs to be written as our SensorHub stub/mock.  No other 
+
+Data - Downstream further we'll need to add DB connections, but this would be one of us (and may not be necessary)
+
+Services - I added SensorHubController and had it auto-scaffold.  It needs to be written as our SensorHub stub/mock.  No other 
 changes needed.  Additional classes OK.
-\nNo other changes should be needed until we get to dealing with Database stuff (appsettings.json will need to be updated, etc)
+
+No other changes should be needed until we get to dealing with Database stuff (appsettings.json will need to be updated, etc)
