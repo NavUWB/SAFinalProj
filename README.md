@@ -41,14 +41,13 @@ Models - Only need to add classes
 
 Views - All views under the Home folder need to be changed or deleted, nothing else should be altered.  Adding is OK.
 
-Controllers - Depending on view changes, Home controller may need to be changed (it's only doing stuff for the top margin tabs).  
-Otherwise, only additional classes.
+Controllers - Depending on view changes, Home controller may need to be changed (it's only mapping links to views).  
+Otherwise, only additional classes, no deletes.
 
-Data - Downstream further we'll need to add DB connections, but this would be one of us (and may not be necessary)
+Data - Need to give the database a context.  I'm really unsure of how the magic happens here, but I beleive we're mapping each model and it's associated data to a field in the database for CRUD.
 
-Services - I added SensorHubController and had it auto-scaffold.  It needs to be written as our SensorHub stub/mock.  No other 
-changes needed.  Additional classes OK.
+Migrations - Downstream further we'll need to add DB connections, but this would only be one of us (may not be necessary).
 
-No other changes should be needed until we get to dealing with Database stuff (appsettings.json will need to be updated, etc)
+Services - I added SensorHubController and had it auto-scaffold.  It needs to be coded as our SensorHub stub/mock - it's EMPTY.  No other changes to folder needed.  Additional classes OK.
 
-There is a lot of stuff, most all of it is for the log-in and email framework and support classes.
+There is a lot of stuff already, most all of it is for the log-in and email framework and support classes.
