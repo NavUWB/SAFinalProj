@@ -35,6 +35,7 @@ Files to Change
 Models - None, only need to add classes
 
 Views - All views under the Home folder need to be changed or deleted, nothing else should be altered.  Adding is OK.
+
 Controllers - Depending on view changes, Home controller may need to be changed (it's only doing stuff for the top margin tabs).  
 Otherwise, only additional classes.
 
