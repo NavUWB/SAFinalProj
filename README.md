@@ -46,7 +46,7 @@ Views - All views under the Home folder need to be changed or deleted, nothing e
 Controllers - Depending on view changes, Home controller may need to be changed (it's only mapping links to views).  
 Otherwise, only additional classes, no deletes.
 
-Data - Need to give the database a context.  I'm really unsure of how the magic happens here, but I beleive we're mapping each model and it's associated data to a field in the database for CRUD.
+Data - DONE Need to give the database a context.  I'm really unsure of how the magic happens here, but I beleive we're mapping each model and it's associated data to a field in the database for CRUD.
 
 Migrations - Downstream further we'll need to add DB connections, but this would only be one of us (may not be necessary).
 
